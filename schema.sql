@@ -38,7 +38,6 @@ ALTER TABLE animals
 ADD COLUMN owner_id INT,
 ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
 
-
 --create vets table--
 create table vets (
     id GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
