@@ -25,6 +25,15 @@ BEGIN;
 DELETE FROM animals WHERE name != '';
 ROLLBACK;
 
+
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+SAVEPOINT delete_dob;
+UPDATE animals SET weight_kg = weight_kg * -1;
+ROLLBACK TO SAVEPOINT delete_dob;
+UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 1;
+COMMIT;
+
 SELECT COUNT(*) FROM animals;
 SELECT COUNT(*) FROM animals WHERE escape_attempts < 1;
 SELECT AVG(weight_kg) FROM animals;
