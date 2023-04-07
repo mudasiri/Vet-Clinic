@@ -238,15 +238,13 @@ I would like to thank microverse for the opportunity to learn Postgresql
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **[What Database is Used here?]**
 
-- **[Question_1]**
+  - [The database used is PostgreSQL]
 
-  - [Answer_1]
+- **[Can I use PostgreSQL Database Locally on my PC]**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - [Yes you can, visit : postgresql.org to download it]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
